@@ -41,13 +41,13 @@ This project builds for Linux, macOS, and Windows. To perform a build for any su
 ### Linux
 
 0. `cd build`
-1. `./build.sh`
+1. `./linux-build.sh`
 2. Once the build process is complete run: `./linux-deploy.sh`
 
 ### macOS
 
 0. `cd build`
-1. `./build.sh`
+1. `./osx-build.sh`
 2. Once the build process is complete run: `./osx-deploy.sh`
 
 ### Windows
@@ -56,12 +56,12 @@ This project builds for Linux, macOS, and Windows. To perform a build for any su
 
 NOTE: The build process uses GnuWin32 tools and MinGW tools. Install these and make sure that `mingw32-make` and `wget` are on your path.
 
-1. `./win-build.sh`
+1. `./windows-build.sh`
 
-2. Once the build process is complete run: `./win-deploy.sh`
+2. Once the build process is complete run: `./windows-deploy.sh`
 
 ## Running
 
-The `deploy.sh` creates a tarball containing all of the executables and dependent libraries. Extract the tarball to your location of choice and execute.
+The `{platform}-deploy.sh` creates a tarball containing all of the executables and dependent libraries. Extract the tarball to your location of choice and execute.
 
 Enjoy!
